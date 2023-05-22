@@ -1,0 +1,22 @@
+h2{
+	color: black;
+	font-family: Arial;
+	font-size: 50px ;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
+	
+}
+ol{
+	list-style-type: square;
+	color: green;
+	font-family: Roboto;
+	text-align: left;
+}
+ul{
+	list-style-type: upper-roman;
+	color: red;
+	font-family: Open-Sans;
+	text-align: left;	
+}
+

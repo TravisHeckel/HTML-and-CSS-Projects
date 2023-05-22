@@ -1,0 +1,20 @@
+body {
+	font-style: italic;
+	text-align: center;
+}
+
+.Class_A {
+	color: yellow;
+}
+
+p {
+	color: #8A2BE2 ;
+	background: black ;
+	font-weight: 200 ;
+	text-align: right ;
+}
+
+h5 {
+	text-shadow: 2px 2px Grey;
+}
+/*This is how you write a comment in CSS*/

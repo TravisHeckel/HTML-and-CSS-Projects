@@ -1,0 +1,38 @@
+h2{
+	color: black;
+	font-family: Arial;
+	font-size: 50px ;
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: left;	
+}
+h1{
+	color: black;
+	font-family: Arial;
+	font-size: 100px ;
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: center;
+}
+table{
+	border: 5px solid black;
+}
+td:hover{
+	background-color: blue;
+	color: white;
+}
+tr,th {
+	color: black;
+	font-family: Arial;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 900;
+	text-align: center;
+}
+tr,td {
+	color: red;
+	font-family: Arial;
+	font-size: 20px;
+	font-style: normal;
+	text-align: center;
+}
