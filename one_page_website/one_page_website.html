@@ -3,11 +3,12 @@
 	<head>
 		<meta charset = "UTF-8">
 		<title> Travis Cooking Experience </title>
+		<link rel="stylesheet" type="text/css" href="css/one_page_website.css">
 	</head>
 	<div>
 		<div>
-			<div>
-				<ul>
+			<div class="nav-container">
+				<ul class="nav-list" >
 					<a href ="#summary"><li>SUMMARY</li><a>
 					<a href ="#recipes"><li>RECIPES</li><a>
 					<a href ="#about"><li>ABOUT</li><a>
@@ -16,8 +17,8 @@
 			</div>
 		</div>
 	</div>
-	<!--Summary-->
-	<section id="summary">
+	<!--first paragraph-->
+	<section id="first">
 		<div>
 			<h2> What to expect! </h2>
 			<div>
@@ -33,7 +34,8 @@
 			<h3> Voted best recipes on this site! </h3>
 			<div>
 				<img src="./image/ramen.png" alt="ramen.">
-				<summary>Ramen</summary>
+				<summary class="sum">Ramen</summary>
+					<p>Amazing bowl of ramen!</p>
 				<details>
 					<p> 
 						<a href="https://www.betternaturetempeh.co/recipe/bbq-ribz-with-sweet-potato-fries">click here for the recipe</a>
@@ -41,7 +43,8 @@
 				</details>
 				
 				<img src="./image/ribs.png" alt="ribs and sweet potato fries.">
-				<summary>Ribs and Sweet potato fries</summary>	
+				<summary class="sum">Ribs and Sweet potato fries</summary>
+					<p>Amazing bowl of ramen!</p>	
 				<details>
 					<p>
 						<a href="https://www.betternaturetempeh.co/recipe/bbq-ribz-with-sweet-potato-fries">click here for the recipe</a>
@@ -49,7 +52,8 @@
 				</details>	
 				
 				<img src="./image/southwest.png" alt="Southwest salad">
-				<summary>Southwest Salad</summary>	
+				<summary class="sum">Southwest Salad</summary>	
+					<p>Amazing bowl of ramen!</p>
 				<details>
 					<p>
 						<a href="https://thecozycook.com/southwest-salad/">click here for the recipe</a>
@@ -57,7 +61,8 @@
 				</details>	
 				
 				<img src="./image/tacobell.png" alt="Tacobell Taco's">
-				<summary>Copy Tacobell Taco's</summary>				
+				<summary class="sum">Copy Tacobell Taco's</summary>				
+				<p>Amazing bowl of ramen!</p>
 				<details>
 					<p>
 						<a href="https://copykat.com/taco-bell-taco/">click here for the recipe</a>
@@ -72,7 +77,8 @@
 	<section id="about">
 		<p> I am Travis Heckel, I am 28 years old and happily married. I currently am studying computer sciences and enjoy any kind of technology. I have no formal training as a cook and I really only tried to learn to cook starting the last two years.</p>	
 		<p> I have found that so many cool recipes have already been created that all I have been doing is finding the ones I enjoy and seeing how I can mix and match, especially with little time or money spent in experimenting.</p>
-		<p> Just like this recipe: </p> <iframe src="https://www.youtube.com/watch?v=vHvwUEHcyvA" title="Joshua Wiessman 3 Dollar Ramen Bowl" alt="sorry I forgot how to do this"></iframe>
+		<p> Just like this recipe: </p> <iframe src="https://www.youtube.com/embed/watch?v=vHvwUEHcyvA"  alt="sorry I forgot how to do this"></iframe>
+	</section>
 	<!--End of About-->
 	
 	<!--Contact-->
@@ -82,9 +88,9 @@
 			<p> This will include all the amazing new recipes I try each week! </p>
 			<div>
 				<form action="" method="get">
-				First Name: <input type="text" name="First_Name"><br>
-				Last Name: <input type="text" name="Last_Name"><br>
-				Email Address:  <input type="text" name="Email_Address"><br>
+				First Name:<input class ="rsvp" type="text" name="First_Name"><br>
+				Last Name:<input class ="rsvp" type="text" name="Last_Name"><br>
+				Email Address:<input class ="rsvp" type="text" name="Email_Address"><br>
 			</div>
 		</div>
 	</div>
