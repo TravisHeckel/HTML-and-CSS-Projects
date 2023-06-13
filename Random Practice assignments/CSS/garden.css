@@ -1,0 +1,59 @@
+.main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: drop-shadow(-5px 5px);
+    border-radius: 2%;
+    text-align: center;
+    position: relative;
+}
+
+h4 {
+    font-size:large;
+    text-align: center;
+}
+
+footer {
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    font-weight: 900;
+}
+
+table {
+    border: 5px solid black;
+    margin-left: auto;
+   margin-right: auto;
+}
+
+th, td {
+   font-family: 'Times New Roman', Times, serif;
+   border: 1px  solid purple;
+   padding: 10px;
+   text-align: left;
+}
+
+ th {
+    font-weight: 900;
+    background-color: #1a0936 ;
+    color: white;
+    
+}
+
+.one {
+    font-style:italic;
+    background-color: rgb(121, 92, 168);
+}
+
+.bottom-center{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 15px;
+}
