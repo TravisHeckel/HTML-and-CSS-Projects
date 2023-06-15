@@ -1,29 +1,122 @@
-.main {
+/*edit to all info inside body */
+body {
+    background-color: lightseagreen;
+}
+
+
+/*this is the main photo*/
+.main-pic {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    filter: drop-shadow(-5px 5px);
+    filter: drop-shadow(5px 5px);
     border-radius: 2%;
     text-align: center;
     position: relative;
+    margin-bottom: 100px;
+    
 }
 
+.bottom-center{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: .5s ease;
+    opacity: 0;
+    /* edits for the text inside this */
+    color: yellow;
+    font-size: 15px;
+    background-color: #040404;
+    padding: 10px 32px;
+}
+
+
+
+.container:hover .bottom-center {
+    opacity: 1;
+}
+
+.one {
+    font-style:italic;
+    background-color: rgb(121, 92, 168);
+} 
+
+/*This is the title of the website*/
 h4 {
-    font-size:large;
+    font-size:2.5em;
     text-align: center;
+    text-decoration:underline;
+    text-underline-position: under;
 }
 
-footer {
-    text-align:center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 30px;
-    font-weight: 900;
+/*This is the navigation bar information*/
+.navbar {
+    overflow: hidden;
+    background-color: #3b2f44;
+    position: fixed; /*remember this keeps it at the top of the webpage and not the  top of the browser*/
+    top:0; /*This will place it at the top of the page above everything else*/
+    width: 100%;
 }
 
+.navbar a {
+    float: left;
+    display: block; /*this keeps it all on the same block or row in the programm*/
+    color:antiquewhite;
+    text-align: center; /* not sure of this purpose */
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover { /*this is what color changes occurs when your cursor is on the text box for the navbar */
+    background: antiquewhite;
+    color: #3b2f44;
+}
+
+.main{
+    margin-top: 100px;
+}
+
+
+/*creation of a three column system */
+
+.column {
+    height: 300px;
+    float: left;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+}
+
+.left {
+    color:rgb(15, 15, 145);
+    width: 25%;
+}
+
+.middle {
+    color:rgb(24, 102, 43);
+ width: 25%;
+}
+
+.right {
+  width: 46%;  
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.description:hover {
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    display: inline;
+}
+
+/*this covers the table of information*/
 table {
     border: 5px solid black;
     margin-left: auto;
@@ -44,16 +137,55 @@ th, td {
     
 }
 
-.one {
-    font-style:italic;
-    background-color: rgb(121, 92, 168);
+/* Edit to video sizing */
+.video-loop {
+    width: 80%;
+    height: 750px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
-.bottom-center{
+
+ .center-option{
     position: absolute;
-    top: 60%;
+    top: 160%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: .5s ease;
+    opacity: 0; 
+    /* edits for the text inside this */
     color: yellow;
-    font-size: 15px;
+    font-size: 75px;
+    background-color: #040404;
+    padding: 10px 32px;
+}
+
+ .box:hover .video-loop{
+    opacity: 0.3;
+}
+
+.box:hover .center-option {
+    opacity: 1;
+} 
+
+/*this details the end of the webpage*/
+footer {
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    font-weight: 900;
+   
 }

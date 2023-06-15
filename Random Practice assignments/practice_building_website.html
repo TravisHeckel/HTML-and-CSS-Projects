@@ -2,14 +2,15 @@
 <html lang="en">
 	<head>
 		<title>Gardening</title>
-		<meta charset="UTF-8">
-		<meta name="author" content="Travis">
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Travis"/>
+		<meta name="viewport" content="width=device-width"/>
 		<link rel="stylesheet" type="text/css" href="./css/garden.css">
 	</head>
 	<body>
 		<!--INTRO-->
-		<div class="container">
-			<div>
+		<div class="main">
+			<div class="container">
 				<h4> Basics of Growing your Own Garden! </h4>
 			</div>
 		</div>
@@ -17,7 +18,7 @@
 
 		<!--NAVIGATION BAR-->
 		<div>
-			<div class ="container">
+			<div>
 				<div class="navbar">
 					<a href="#home">HOME</a>
 					<a href="#about">ABOUT</a>
@@ -28,50 +29,93 @@
 		<!--END OF NAVIGATION BAR-->
 
 		<!--MAIN IMAGE-->
-		<div class="container">
+		<div>
 			<div>
-				<div>
-					<img  class="main" src="./image/garden_box.jpg" alt="">
-					<h1 class="bottom-center">*ACTUAL IMAGES FROM A GARDEN</h1>
+				<div class="container">
+					<img  class="main-pic" src="./image/garden_box.jpg" alt="Gardening">
+					<div>
+						<h1 class="bottom-center">*ACTUAL IMAGE OF A GARDEN</h1>
+					</div>
 				</div>
 			</div>
 		</div>
 		<!--END OF MAIN IMAGE-->
 
-		<!--TABLE OF PLANTS-->
+		<!--TWO COLUMN SYSTEM-->
+
+		<div>
+			<div class = "row">
+				<div class="column left">
+					<p class="description">HOW GARDENING WORKS </p><br>
+						Gardening is an absolute joy for all ages and is super easy 
+						to accomplish whether you have a big back yard or a few pots on a porch. The necessary 
+						information for taking care of plants is listed here in the table. With this information 
+						we can determine the how much we need to purchase, what soil is required, where to placed 
+						the pots, and how much water is needed. 
+				</div>
+				<div class="column middle">
+					<h2>Recommended vegetables to purchase locally</h2>
+					<ul>
+						<li>Strawberries</li>
+						<li>spagetti squash</li>
+						<li>turnips</li>
+						<li>jalapeno peppers</li>
+						<li>bell peppers</li>
+						<li>Peas</li>
+						<li>Onions</li>
+						<li>Tomatoes</li>
+						<li>Zuchini</li>
+						<li>black berries</li>
+						<li>Watermelon</li>
+					</ul>
+				</div>
+				<div class="column right"><!--TABLE OF PLANTS-->
+					<div>
+						<div>
+							<div>
+								<table class="plants">
+									<tr class="headers">
+										<th>Plant</th>
+										<th>Seed count</th>
+										<th>Sun Requirement(hours)</th>
+										<th>Watering requirements (oz)</th>
+									</tr>
+									<tr>
+										<td class = "one"> Tomatoes</td>
+										<td>3</td>
+										<td>6-8</td>
+										<td>14</td>
+									</tr>
+									<tr>
+										<td class = "one"> Onion</td>
+										<td>1</td>
+										<td>3-5</td>
+										<td>14</td>
+									</tr>
+									<tr>
+										<td class = "one"> Watermelon</td>
+										<td>5</td>
+										<td>8-10</td>
+										<td>30</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END OF TABLE OF PLANTS--></div>
+			</div>
+		</div>
 		<div>
 			<div>
-				<div class="container">
-					<table class="plants">
-						<tr class="headers">
-							<th>Plant</th>
-							<th>Seed count</th>
-							<th>Sun Requirement(hours)</th>
-							<th>Watering requirements (oz)</th>
-						</tr>
-						<tr>
-							<td class = "one"> Tomatoes</td>
-							<td>3</td>
-							<td>6-8</td>
-							<td>14</td>
-						</tr>
-						<tr>
-							<td class = "one"> Onion</td>
-							<td>1</td>
-							<td>3-5</td>
-							<td>14</td>
-						</tr>
-						<tr>
-							<td class = "one"> Watermelon</td>
-							<td>5</td>
-							<td>8-10</td>
-							<td>30</td>
-						</tr>
-					</table>
+				<div class ="box">
+					<video class="video-loop" autoplay loop muted>
+						<source src="./video/gardening.mp4" type="video/mp4">
+						VIDEO CANNOT DISPLAY
+					</video>
+					<p class="center-option">Anyone can do it!</p>
 				</div>
 			</div>
 		</div>
-		<!-- END OF TABLE OF PLANTS-->
 
 		<!--FOOTER-->
 		<footer> 
