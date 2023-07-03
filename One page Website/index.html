@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "UTF-8">
+		<title> Travis Cooking Experience </title>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <script src="JS/main.js"></script>
+	</head>
+    <body>
+        <!--Navigation panel-->
+        <div>
+            <div>
+                <div class="nav-container">
+                    <ul class="nav-list" >
+                        <a href ="#summary"><li>SUMMARY</li><a>
+                        <a href ="#recipes"><li>RECIPES</li><a>
+                        <a href ="#about"><li>ABOUT</li><a>
+                        <a href ="#contact"><li>CONTACT</li><a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id = container_1>
+            <h2> Travis Heckels Recipe Mayhem</h2>
+            <div>
+                <p id="intro">I plan on taking several popular recipes on the internet 
+                    and seeing if I can combine their best qualities or find 
+                    substitutions for things that are difficult to do or items 
+                    that ar hard to attain. Please feel free to vote on your favorite 
+                    by signing up for the news letter below! 
+                </p>
+            </div>
+        </div>
+
+        <div id = container_2>
+            <div id="options">
+                <!-- Images used to open the lightbox -->
+                <div class="row">
+                    <div class="column">
+                        <img src="IMG/img1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="IMG/img2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="IMG/img3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="IMG/img4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                </div>
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="IMG/img1_wide.png" style="width:100%">
+                        </div>
+                  
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="IMG/img2_wide.png" style="width:100%">
+                        </div>
+                  
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="IMG/img3_wide.png" style="width:100%">
+                        </div>
+                  
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="IMG/img4_wide.png" style="width:100%">
+                        </div>
+                  
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="IMG/img1.png" onclick="currentSlide(1)" alt="Nature">
+                        </div>
+                      
+                        <div class="column">
+                            <img class="demo" src="IMG/img2.png" onclick="currentSlide(2)" alt="Snow">
+                        </div>
+                      
+                        <div class="column">
+                            <img class="demo" src="IMG/img3.png" onclick="currentSlide(3)" alt="Mountains">
+                        </div>
+                      
+                        <div class="column">
+                            <img class="demo" src="IMG/img4.png" onclick="currentSlide(4)" alt="Lights">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--About the author-->
+        <div id="container_1">
+            <div id="about">
+                <p> I am Travis Heckel, I am 28 years old and happily married. 
+                    I currently am studying computer sciences and enjoy any kind 
+                    of technology. I have no formal training as a cook and I really only 
+                    tried to learn to cook starting the last two years.
+                </p>	
+                <p> I have found that so many cool recipes have already been created that 
+                    all I have been doing is finding the ones I enjoy and seeing how I can 
+                    mix and match, especially with little time or money spent in experimenting.
+                </p>
+                <p> Just like this recipe: </p> <iframe  src="https://www.youtube.com/embed/gCW1hVAebWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" alt="sorry I forgot how to do this" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--Newsletter sign up-->
+        <div>
+            <div>
+                <div>
+                    <p> Like what I am doing? join in on the adventure and sign up 
+                        for my weekly new's letter<br> This will include all the amazing 
+                        new recipes I try each week! </p>
+                    <div>
+                        <form action="" method="get">
+                        First Name:<input class ="rsvp" type="text" name="First_Name"><br>
+                        Last Name:<input class ="rsvp" type="text" name="Last_Name"><br>
+                        Email Address:<input class ="rsvp" type="text" name="Email_Address"><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Disclosure statement-->
+        <details>
+			<h6> DISCLOSURE: I AM A TRAINED PROFESSIONAL THAT HAS EXPERIENCE WITH THE EQUIPMENT 
+                 AND INGREDIENTS I SHOW IN THESE RECIPES. I WILL NOT BE LIABLE FOR ANYONES INEXPERIENCE 
+                 OR MISUS IN THE PROCESS OF FOLLOWING THROUGH THESE RECIPES. 
+            </h6>
+		</details>
+    </body>
+
+
+</html>
