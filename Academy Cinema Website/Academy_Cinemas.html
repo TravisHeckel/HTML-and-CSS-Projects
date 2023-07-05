@@ -11,21 +11,20 @@
     <title>Academy Cinemas</title>
   </head>
   <body>
-    
-    <div class="container">
-      <!--NAVIGATION BAR-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container" <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <!--NAVIGATION BAR-->   
+      <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-info bg-light sticky-top">
           
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a  class="nav-link text-light" href="#About">About</a>
+          <ul class="nav nav-pills mr-auto">
+            <li class="nav-item">
+              <a  class="nav-link" href="#About">About</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#Showtimes">Showtimes</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#Showtimes">Showtimes</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#Deals">Deals</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#Deals">Deals</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -37,16 +36,16 @@
       <!--END OF NAV BAR-->
 
       <!--HEADING OF WEBSITE-->
-      <div class="jumbotron jumbotron-fluid bg-info text-center">
+        <div class="jumbotron jumbotron-fluid bg-info text-center">
         <div class="container">
           <h1 class="display-4 text-light">Academy Cinemas</h1>
           <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
         </div>
-      </div>
+        </div>
       <!--END OF HEADING OF WEBSITE-->
 
       <!--MOVIE DETAILS-->
-      <div class="card-deck mt-4">
+        <div id="Showtimes" class="card-deck mt-4">
         <div class="card">
           <img class="card-img-top" src="./img/kongskullisland.jpg" alt="Card image cap">
           <div id="Video1" class="card-body">
@@ -90,18 +89,18 @@
             <span class=" badge badge-info badge-pill">9:30 p.m.</span>
           </div>
         </div>
-      </div>
+        </div>
       <!--END OF MOVIE DETAILS-->
 
       <!--ABOUT-->
-      <div class="container mt-4">
+        <div id="About" class="container mt-4">
         <div class="row">
           <div class="col-sm">
 
             <img class="img-fluid" src="./img/pdx.jpg" alt=""/>
 
           </div>
-          <div id="About" class="col-sm">
+          <div class="col-sm">
 
             <h3>Accomodations</h3>
             <p>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</p>
@@ -114,38 +113,91 @@
 
           <!--HOTKEY TO MOVIES-->
           <div class="col-sm">
-           <h3>Now Playing:</h3>
-           <ul id="Showtimes" class="list-group">
-              <li class="list-group-item">
+            <h3>Now Playing:</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
                   <a class="nav-link" href="#Video1">Kong: Skull Island</a>
-              </li>
-              <li class="list-group-item">
-                <a class="nav-link" href="#Video2">Ghost in the Shell</a>
-            </li>
-            <li class="list-group-item">
-              <a class="nav-link" href="#Video3">Beauty and the Beast</a>
-          </li>
-           </ul>
-
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#Video2">Ghost in the Shell</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#Video3">Beauty and the Beast</a>
+                </li>
+            </ul>
           </div>
         </div>
-      </div>
+        </div>
       <!--END OF HOTKEY TO MOVIES-->
 
+      <!--Jumbotron Heading-->
+        <div id = "Deals" class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+        <div class="container">
+          <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">Movie Deals</h1>
+          <p class="lead">Check out our monthly deals...</p>
+          <!--movie deals-->
+          <button type="button" data-toggle="modal" data-target="#register" class = "btn btn-outline-primary">See our monthly movie deals!</button>
+        <!-- /movie deals-->
+        </div>
+        </div>
+      <!--End of jumbotron heading-->
+
       <!--SIGN UP FOR REWARDS-->
-    <div id="Deals" class="text-center"> 
+        <div class="text-center"> 
       <form>
         <h1 class="text-primary my-5">Sign up for Movie Club rewards!</h1>
         <div class="form-group">
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve great movie rewards!">
+          Sign Up </button>
       </form>
-    </div>
+        </div>
       <!--END OF SIGN UP FOR REWARDS-->
 
+      <!--FORM MODAL-->
+        <div class="modal" tabindex="-1" role="dialog" id="register">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Register to recieve movie deals:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <fieldset class="form-group">
+                  <label for="firstname">Last Name:</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="lastname">Last Name:</label>
+                  <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="email">Last Name:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="password">Last Name:</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password...">
+                </fieldset>
+              </form>
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
       <!--FOOTER-->
-      <div class="container my-5">
+        <div class="container my-5">
         <ul class="nav nav-inline">
           <li class="nav-item">
               <small><a class="nav-link active" href="#">Movie Rewards</a></small>
@@ -160,15 +212,17 @@
             <small class="nav-link">&copy;2019 Academy Cinemas</small>
           </li>
         </ul>
-      </div>
+        </div>
       <!--END OF FOOTER-->
-
     </div>
-
-    <!-- Optional JavaScript -->
+  </body>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <script> 
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
+    })
+    </script>
 </html>
