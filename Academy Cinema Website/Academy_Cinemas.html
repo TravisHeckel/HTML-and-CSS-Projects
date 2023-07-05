@@ -10,18 +10,18 @@
 
     <title>Academy Cinemas</title>
   </head>
-  <body>
-    <div class="container" <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-      <!--NAVIGATION BAR-->   
+  <body style ="position: relative;" data-spy="scroll">
+    <div class="container">
+        <!--NAVIGATION BAR-->   
       <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-info bg-light sticky-top">
           
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav nav-pills mr-auto">
             <li class="nav-item">
-              <a  class="nav-link" href="#About">About</a>
+              <a class="nav-link" href="#Showtimes">Showtimes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Showtimes">Showtimes</a>
+              <a  class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Deals">Deals</a>
@@ -33,18 +33,19 @@
           </form>
         </div>
       </nav>
-      <!--END OF NAV BAR-->
+      <div  data-target="#navbar-example2" data-offset="0">
+        <!--END OF NAV BAR-->
 
-      <!--HEADING OF WEBSITE-->
+        <!--HEADING OF WEBSITE-->
         <div class="jumbotron jumbotron-fluid bg-info text-center">
         <div class="container">
           <h1 class="display-4 text-light">Academy Cinemas</h1>
           <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
         </div>
         </div>
-      <!--END OF HEADING OF WEBSITE-->
+        <!--END OF HEADING OF WEBSITE-->
 
-      <!--MOVIE DETAILS-->
+        <!--MOVIE DETAILS-->
         <div id="Showtimes" class="card-deck mt-4">
         <div class="card">
           <img class="card-img-top" src="./img/kongskullisland.jpg" alt="Card image cap">
@@ -90,10 +91,10 @@
           </div>
         </div>
         </div>
-      <!--END OF MOVIE DETAILS-->
+        <!--END OF MOVIE DETAILS-->
 
-      <!--ABOUT-->
-        <div id="About" class="container mt-4">
+        <!--ABOUT-->
+        <div class="container mt-4">
         <div class="row">
           <div class="col-sm">
 
@@ -102,7 +103,7 @@
           </div>
           <div class="col-sm">
 
-            <h3>Accomodations</h3>
+            <h3 id="About">Accomodations</h3>
             <p>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</p>
             <p>Showing our guests a great time is our passion and seeing their smiles is our pleasure!</p>
             <p>All of our auditorius are equipped with brand new Christie 3D&reg; sound systems!</p>
@@ -128,9 +129,9 @@
           </div>
         </div>
         </div>
-      <!--END OF HOTKEY TO MOVIES-->
+        <!--END OF HOTKEY TO MOVIES-->
 
-      <!--Jumbotron Heading-->
+        <!--Jumbotron Heading-->
         <div id = "Deals" class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
         <div class="container">
           <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">Movie Deals</h1>
@@ -140,9 +141,9 @@
         <!-- /movie deals-->
         </div>
         </div>
-      <!--End of jumbotron heading-->
+        <!--End of jumbotron heading-->
 
-      <!--SIGN UP FOR REWARDS-->
+        <!--SIGN UP FOR REWARDS-->
         <div class="text-center"> 
       <form>
         <h1 class="text-primary my-5">Sign up for Movie Club rewards!</h1>
@@ -153,9 +154,9 @@
           Sign Up </button>
       </form>
         </div>
-      <!--END OF SIGN UP FOR REWARDS-->
+        <!--END OF SIGN UP FOR REWARDS-->
 
-      <!--FORM MODAL-->
+        <!--FORM MODAL-->
         <div class="modal" tabindex="-1" role="dialog" id="register">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -196,7 +197,7 @@
         </div>
         </div>
 
-      <!--FOOTER-->
+        <!--FOOTER-->
         <div class="container my-5">
         <ul class="nav nav-inline">
           <li class="nav-item">
@@ -213,7 +214,8 @@
           </li>
         </ul>
         </div>
-      <!--END OF FOOTER-->
+        <!--END OF FOOTER-->
+      </div>
     </div>
   </body>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
