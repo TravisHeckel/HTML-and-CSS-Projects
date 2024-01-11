@@ -10,6 +10,13 @@ body {
 
 p {
     font-weight: 700;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+p.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 /*title and paragraph 1*/
