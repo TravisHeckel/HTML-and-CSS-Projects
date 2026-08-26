@@ -1,27 +1,45 @@
-HTML AND CSS PROJECTS
+# HTML & CSS Projects
 
-	This contains several samples of websites I made using HTML and CSS.
+A collection of websites and exercises I built while learning front-end
+development at The Tech Academy. Everything here is plain HTML and CSS (with a
+little Bootstrap), so there's no build step — **open any project's `.html` file in
+a browser** to view it.
 
-TRAVIS'S RECIPE SITE
+## Sites
 
-	This was an example of a website use to display recipe combinations I would try
-	and rate using popular recipes from the internet.
+### [Cooking / Recipe Site](./One%20page%20Website)
+A one-page site ("Travis Cooking Experience") used to display and rate recipe
+combinations I tried from around the internet.
 
-ACADEMY CINEMA SITE
+### [Academy Cinema Site](./Academy%20Cinema%20Website)
+An example movie-theater page built with **Bootstrap 4**. It shows off the main
+Bootstrap components — navbar, jumbotron, form, cards, and dropdowns.
 
-	This page is an example of  a movie theater. I designed this using Boostrap 4. 
-	The main Boostrap components displayed in this one are the navbar, jumbotron, form,
-	cards, and dropdowns.
+### [Space Station Site](./Space%20Station%20Site)
+An example home page for a space-travel company, styled with CSS. It includes a
+navbar, image containers, and a form, along with a few focused CSS demos
+(menus, image effects).
 
-SPACE STATION SITE
+### [Portfolio Website](./Portfolio%20website)
+An early single-page portfolio layout ("T-Heckel Portfolio").
 
-	This is an example home page for a Space travel company. Its styled using CSS and 
-	contains a navbar, image containers, and a form.
+## Practice work
 
-LESSON FOLDER
+### [Lessons](./Lessons)
+Challenges given out during the course — practice with specific HTML/CSS (and a
+bit of JavaScript) techniques while developing the thinking needed to design,
+build, and maintain websites.
 
-	This folder contains challenges give out during the course in which I was apple to 
-	practice specific code and start developing some of the thinking processes required to 
-	design, build and maintain websites and other programs.
+### [Basic HTML Template](./Basic_HTML_Template.html)
+The starter template I use to spin up each new HTML file.
 
-The final file is a template I use to start up each of the HTML files I use.
+## Built with
+
+- HTML5
+- CSS3
+- Bootstrap 4 (Academy Cinema site)
+
+## Author
+
+**Travis Heckel** — [GitHub](https://github.com/TravisHeckel) ·
+[LinkedIn](https://www.linkedin.com/in/travis-heckel-548010147/)
