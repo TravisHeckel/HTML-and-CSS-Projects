@@ -1,0 +1,9 @@
+# JetBrains / Visual Studio
+.idea/
+.vs/
+*.suo
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db
